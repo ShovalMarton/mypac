@@ -57,7 +57,7 @@ CIF_new_kernel <- function(main_data,kernel = locpol::gaussK,digits = 0,
   fit.3a <- summary(survival::survfit(survival::Surv(time  = main_data$R,time2 =  main_data$V2,
                                                      event = main_data$delta4,type = "counting")~1))
  
-  time.3a <- fit.3a$time; h.3a <- fit.3a$n.event/fit.3a$n.risk#; ch.3a <- cumsum(h.3a);
+  time.3a <- fit.3a$time; h.3a <- fit.3a$n.event/fit.3a$n.risk#;
   S.3a <-  cumprod(c(1-h.3a))
   F.3a <- stepfun(time.3a,c(0,1-S.3a))
 
