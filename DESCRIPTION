@@ -25,3 +25,5 @@ Imports:
 LinkingTo: Rcpp, RcppArmadillo
 Encoding: UTF-8
 RoxygenNote: 7.2.0
+URL: https://github.com/ShovalMarton/mypac
+BugReports: https://github.com/ShovalMarton/mypac/issues
