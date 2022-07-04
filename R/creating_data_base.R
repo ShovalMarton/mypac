@@ -23,7 +23,7 @@
 #'  delta2 = ifelse(V1==T2,1,0),
 #'  delta3 = ifelse(T2<=C,1,0)*delta1,
 #'  delta4 = ifelse(T2<=C,1,0)
-
+#' @export
 creating_data_base <- function(T1, T2, C, R,digits=0){
 
   # Check the input ----
